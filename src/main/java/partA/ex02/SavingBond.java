@@ -5,5 +5,7 @@ public class SavingBond {
     public double interest;
     public double interestRate;
 
+    int sixtyMax = Math.max(30,0);
+
 
 }
