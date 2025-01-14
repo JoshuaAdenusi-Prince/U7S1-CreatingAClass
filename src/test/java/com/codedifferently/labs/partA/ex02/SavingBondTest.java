@@ -5,9 +5,10 @@ import partA.ex02.SavingBond;
 public class SavingBondTest {
     public static void main(String[] args) {
        SavingBond person = new SavingBond();
-       System.out.println(person.term(5));
-       person.bond = 200;
-       person.interestRate(11);
+       System.out.println(person.term(8.0));
+       person.bond = 10.0;
+        System.out.println(person.interestRate(50));
+//        System.out.println(person.total(3));
 
 
 
