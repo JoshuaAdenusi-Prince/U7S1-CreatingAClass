@@ -2,7 +2,12 @@ package partA.ex02;
 
 public class SavingBond {
     public double term(double month){
-        return Math.max(1, Math.min(60,month));
+//        return Math.max(1, Math.min(60,month));
+        for (int i = 60; i >= 0 ; i--) {
+            month += i;
+            return i;
+        }
+        return 0;
     }
     public double bond;
     public double interestRate(double months){
@@ -21,11 +26,11 @@ public class SavingBond {
             }
 
         }
-        public double total(double plusInt){
-        double part = bond*interestRate(double months);
-        plusInt = part + bond;
-        return plusInt;
-    }
+//        public double total(double plusInt){
+//        double part = bond*interestRate(double months);
+//        plusInt = part + bond;
+//        return plusInt;
+//    }
 
 
 

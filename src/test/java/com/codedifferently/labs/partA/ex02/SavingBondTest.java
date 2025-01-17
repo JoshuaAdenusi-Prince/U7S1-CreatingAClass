@@ -7,15 +7,15 @@ import java.util.Scanner;
 public class SavingBondTest {
     public static void main(String[] args) {
        SavingBond person = new SavingBond();
-       System.out.println(person.term(8.0));
+//       System.out.println(person.term(8.0));
        person.bond = 10.0;
-        System.out.println(person.interestRate(50));
-        System.out.println(person.total(3));
-//        Scanner bonds = new Scanner(System.in);
-//
-//        for (int i = 1; i <= 60 ; i++) {
-//
-//        }
+//        System.out.println(person.interestRate(50));
+//        System.out.println(person.total(3));
+        System.out.println("pick a number");
+        Scanner terms = new Scanner(System.in);
+        double bond = terms.nextDouble();
+
+        System.out.println(person.term(bond));
 
 
 
