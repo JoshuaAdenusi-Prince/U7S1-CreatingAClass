@@ -38,6 +38,7 @@ public abstract class Mammal extends Animal {
 
 
     public Integer getNumberOfMealsEaten() {
+
         return eatenMeals.size();
     }
 

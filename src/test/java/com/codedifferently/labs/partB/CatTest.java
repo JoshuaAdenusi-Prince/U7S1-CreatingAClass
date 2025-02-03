@@ -11,7 +11,7 @@ import java.util.Date;
 
 public class CatTest {
     @Test
-    void testSetName(){
+    void catTest(){
         Date bDay = new Date();
         Cat ginger = new Cat("Garfield",bDay,11212);
 
