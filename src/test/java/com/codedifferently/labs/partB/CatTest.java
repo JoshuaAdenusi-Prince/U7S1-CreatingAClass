@@ -28,6 +28,8 @@ public class CatTest {
         System.out.println(ginger.speak());
 
         Food fish = new Food();
+//        fish = counter++;
+//        ginger.eat(Food.plus1());
         ginger.eat(fish);
 
         Assertions.assertEquals(1,ginger.getNumberOfMealsEaten());
