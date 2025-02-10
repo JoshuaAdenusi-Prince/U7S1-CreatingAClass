@@ -13,7 +13,7 @@ public class CatHouseTest {
         Cat pookie = new Cat("jax", new Date(), 22438);
         CatHouse.add(pookie);
         Assertions.assertEquals("jax",pookie.getName());
-        
+
 
 //        String cat = "corithin";
 //        Cat coritheon = new Cat("coritheon", new Date(), 13977);
