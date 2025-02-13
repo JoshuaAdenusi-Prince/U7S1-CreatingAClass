@@ -33,9 +33,5 @@ public class CatHouseTest {
 
 
 
-//        String cat = "corithin";
-//        Cat coritheon = new Cat("coritheon", new Date(), 13977);
-//        Cat pantheon = new Cat("pantheon", new Date(), 677139);
-//        Cat add = CatHouse.add(pantheon);
     }
 }

@@ -6,7 +6,6 @@ import partB.animals.Animal;
 import partB.animals.Cat;
 import partB.animals.Mammal;
 import partB.food.Food;
-
 import java.util.Date;
 
 public class CatTest {
