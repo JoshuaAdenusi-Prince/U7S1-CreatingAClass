@@ -1,5 +1,6 @@
 package com.codedifferently.labs.partB;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import partB.animals.Dog;
 import partB.storage.DogHouse;
@@ -23,7 +24,15 @@ public class DogHouseTest {
         DogHouse.add(kitty5);
         System.out.println(kitty);
         System.out.println(kitty1);
-
+        Assertions.assertEquals(kitty,new Dog("Skipper", new Date(), 2257986));
+        DogHouse.remove(kitty1);
+        DogHouse.remove(9982468);
+        Dog whoDis = DogHouse.getDogById(7112764);
+        Assertions.assertEquals(whoDis, DogHouse.getDogById(7112764));
+        System.out.println(whoDis);
+        Integer snuffOut = DogHouse.getNumberOfDogs();
+        Assertions.assertEquals(snuffOut, DogHouse.getNumberOfDogs());
+        System.out.println(snuffOut);
 
     }
 }
