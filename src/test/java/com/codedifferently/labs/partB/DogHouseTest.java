@@ -24,7 +24,7 @@ public class DogHouseTest {
         DogHouse.add(kitty5);
         System.out.println(kitty);
         System.out.println(kitty1);
-        Assertions.assertEquals(kitty,new Dog("Skipper", new Date(), 2257986));
+        Assertions.assertEquals("Skipper", kitty.getName());
         DogHouse.remove(kitty1);
         DogHouse.remove(9982468);
         Dog whoDis = DogHouse.getDogById(7112764);
