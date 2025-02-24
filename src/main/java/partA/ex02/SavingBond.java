@@ -1,39 +1,38 @@
 package partA.ex02;
 
 public class SavingBond {
-    public double term(double terms){
-//        return Math.max(1, Math.min(60,month));
-        for (double i = terms; i >= 0 ; i--) {
-            System.out.println(terms);
-        }
-        return terms;
-    }
-    public double bond;
+    public int term, monthsRemaining;
+    public double bond, rate;
 
-    public double interestRate(double months){
+    public void interestRateNTerm (int months){
             if (months >= 0 && months <= 11) {
-                return .005;
+                rate = 0.005;
             }else if (months >= 12 && months <= 23) {
-                return .010;
+                rate = 0.010;
             }else if (months >= 24 && months <= 35) {
-                return .015;
+                rate = 0.015;
             }else if (months >= 36 && months <= 47) {
-                return .020;
+                rate = 0.020;
             }else if (months >= 48 && months <= 60) {
-                return .025;
+                rate = 0.025;
             } else {
-              return 0;
+                System.out.println("Invalid Term");
+              months = 0;
             }
+            term = months;
+            monthsRemaining = months;
 
         }
-//        bond*= 0.025;
-//        public double total(double plusInt){
-//        double part = bond*interestRate(double months);
-//        plusInt = part + bond;
-//        return plusInt;
-//    }
 
-
-
-
+    public void term(){
+        if(monthsRemaining > 0 && monthsRemaining <= 60) {
+            bond += bond * rate/12;
+            monthsRemaining--;
+            System.out.println("bond: $" + bond);
+            System.out.println("Months Remaining: " + monthsRemaining);
+        }
+        else{
+            System.out.println("bond Matured");
+        }
+    }
 }

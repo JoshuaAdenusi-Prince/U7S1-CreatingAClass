@@ -18,8 +18,18 @@ public class AlgoChallenge {
      */
 
     public static Boolean oneTeen(int person1, int person2) {
-
-        return null;
+        if(person1 >= 13 && person1 <= 19){
+            if (person2 > 19){
+                return true;
+            }
+        } else if (person2 >= 13 && person2 <= 19) {
+            if (person1 > 19){
+                return true;
+            }
+        } else {
+            return false;
+        }
+        return false;
     }
 
 
